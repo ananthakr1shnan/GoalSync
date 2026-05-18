@@ -4,6 +4,19 @@ GoalSync is a modern, enterprise-ready Performance Management & OKR tracking sys
 
 ---
 
+## 👥 Demo / Sandbox Accounts
+
+To explore GoalSync across different roles immediately, you can log in using these pre-seeded sandbox accounts. **All accounts share the same password:** `Demo@1234`
+
+| Role | Name | Email Address | Password | Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| 🛡️ **Admin** | Admin User | `admin@goalsync.demo` | `Demo@1234` | Open/pause/close cycles, manage users & roles, assign managers, view audit logs, push shared organization goal templates. |
+| 👥 **Manager** | Sarah Manager | `manager@goalsync.demo` | `Demo@1234` | Side-by-side goal reviews, submit check-in ratings/feedback, view direct reports' completion analytics and team tracker. |
+| 👤 **Employee** | John Employee | `employee@goalsync.demo` | `Demo@1234` | Draft & submit goal sheets (100% weight check), perform self-evaluation quarterly check-ins. (Reports to **Sarah**) |
+| 👤 **Employee** | Alice Employee | `alice@goalsync.demo` | `Demo@1234` | Draft & submit goal sheets (100% weight check), perform self-evaluation quarterly check-ins. (Reports to **Sarah**) |
+
+---
+
 ##  Key Features
 
 ### Employee Portal
