@@ -62,7 +62,7 @@ To explore GoalSync across different roles immediately, you can log in using the
 
 ##  Getting Started
 
-### 🐋 Option 1: Running with Docker Compose (Recommended)
+###  Option 1: Running with Docker Compose (Recommended)
 
 To run the entire ecosystem (Frontend, Backend, and PostgreSQL database) with a single command:
 
