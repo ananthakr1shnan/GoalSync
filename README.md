@@ -1,28 +1,28 @@
-# 🎯 GoalSync
+#  GoalSync
 
 GoalSync is a modern, enterprise-ready Performance Management & OKR tracking system. Designed to align team goals, automate review workflows, and provide powerful organization-wide analytics, GoalSync empowers employees, managers, and administrators to streamline performance reviews seamlessly.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 👤 Employee Portal
+### Employee Portal
 *   **Interactive Goal Sheet Builder:** Create structured quarterly or annual goals with custom weightages (ensuring a total of 100%).
 *   **Draft & Submission Workflows:** Work on your goal sheets in draft mode and submit them for manager approval once ready.
 *   **Quarterly Check-ins:** Self-evaluate goals by updating target values, adding notes, and tracking individual completion scores.
 
-### 👥 Manager Review & Team Dashboard
+###  Manager Review & Team Dashboard
 *   **Centralized Approvals:** View team goal sheets side-by-side with previous versions, approve with comments, or return them with change requests.
 *   **Check-in Evaluations:** Review employee check-ins and add official manager feedback and performance ratings.
 *   **Team Progress Analytics:** Monitor overall team goal completion rates, weightage distributions, and individual status trackers at a glance.
 
-### 🛡️ Admin Control Center & Compliance
+### Admin Control Center & Compliance
 *   **Cycle Manager:** Open, pause, and close goal creation and review cycles with strict organizational deadlines.
 *   **User & Hierarchy Management:** Manage users, assign direct managers, and control roles (Employee, Manager, Admin).
 *   **Audit Logging:** Access a secure, chronological ledger of all critical actions (submissions, approvals, returns, role changes).
 *   **Shared Templates:** Push template goals down to all active employee goal sheets for organizational alignment.
 
-### 📈 Analytics & Automated Workflows
+###  Analytics & Automated Workflows
 *   **Organization-Wide Analytics:** Visual distributions of goal statuses, completion rates, cycle timelines, and alignment vectors.
 *   **Automated Email Notifications:** Beautiful HTML emails triggered for:
     *   Goal sheet submission, approval, or return.
@@ -32,7 +32,7 @@ GoalSync is a modern, enterprise-ready Performance Management & OKR tracking sys
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Component | Technology | Description |
 | :--- | :--- | :--- |
@@ -47,7 +47,7 @@ GoalSync is a modern, enterprise-ready Performance Management & OKR tracking sys
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 🐋 Option 1: Running with Docker Compose (Recommended)
 
@@ -67,7 +67,7 @@ To run the entire ecosystem (Frontend, Backend, and PostgreSQL database) with a 
 
 ---
 
-### 💻 Option 2: Local Development Setup
+###  Option 2: Local Development Setup
 
 #### 1. Backend Setup
 1. Navigate to the backend folder:
@@ -119,7 +119,7 @@ To run the entire ecosystem (Frontend, Backend, and PostgreSQL database) with a 
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Both frontend and backend are equipped with automated test suites:
 
@@ -136,7 +136,7 @@ Both frontend and backend are equipped with automated test suites:
 
 ---
 
-## 🌐 Production Deployment
+##  Production Deployment
 
 This project includes a native `render.yaml` orchestration configuration to deploy both the frontend, backend, and managed PostgreSQL databases instantly on Render. 
 
