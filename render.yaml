@@ -11,10 +11,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: FRONTEND_URL
-        fromService:
-          name: goalsync-frontend
-          type: web
-          property: url
+        sync: false
       - key: EMAIL_ENABLED
         value: "true"
       - key: GMAIL_USER
