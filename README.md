@@ -149,6 +149,32 @@ Both frontend and backend are equipped with automated test suites:
 
 ---
 
+## 🏛️ Architecture & Hosting Choices
+
+### System Architecture Diagram
+The architecture is designed to be lightweight, secure, and highly scalable, using an asynchronous FastAPI backend communicating with a React single-page frontend.
+
+```mermaid
+graph TD
+    User([Browser Client]) <-->|HTTPS / React App| FE[Render Static Frontend]
+    FE <-->|API Calls / JSON| BE[Render Web Backend FastAPI]
+    BE <-->|Background Jobs| Sch[APScheduler Task Engine]
+    BE <-->|Read/Write / SSL| DB[(Neon Cloud PostgreSQL)]
+    Sch -->|SMTP Secure Connection| Email[Gmail SMTP Server]
+    Email -->|Email Alerts| User
+```
+
+### Hosting & Infrastructure Choices
+
+1. **Frontend Hosting (Render Static Sites):**
+   * **Why:** Fast, globally distributed CDN for hosting the built React-Vite static bundle. Native support for SSL, custom URL rewrites, and 100% free with no credit card requirement.
+2. **Backend Web Service (Render Python):**
+   * **Why:** Native support for ASGI/Python web servers (FastAPI + Gunicorn), easy management of background threads (APScheduler) in the same process pool, automatic deployment on git push, and SSL termination.
+3. **Database Hosting (Neon PostgreSQL):**
+   * **Why:** Serverless cloud PostgreSQL that provides auto-scaling, 100% Postgres compatibility, high availability, and a generous free tier with absolutely no credit card required.
+
+---
+
 ##  Production Deployment
 
 This project includes a native `render.yaml` orchestration configuration to deploy both the frontend, backend, and managed PostgreSQL databases instantly on Render. 
