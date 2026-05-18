@@ -5,12 +5,8 @@ from sqlalchemy import pool
 
 from alembic import context
 
-# this is the Alembic Config object, which provides
-# access to the values within the .ini file in use.
 config = context.config
 
-# Interpret the config file for Python logging.
-# This line sets up loggers basically.
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
@@ -25,11 +21,6 @@ from app.core.config import config as app_config
 target_metadata = Base.metadata
 
 config.set_main_option("sqlalchemy.url", app_config.DATABASE_URL.replace("postgresql://", "postgresql+psycopg2://"))
-
-# other values from the config, defined by the needs of env.py,
-# can be acquired:
-# my_important_option = config.get_main_option("my_important_option")
-# ... etc.
 
 
 def run_migrations_offline() -> None:
